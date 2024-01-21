@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px black;
+}
+
+.info {
+    background-color: #4a83b5;
+    color: white;
+    padding: 20px;
+    height: 580px;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.rect {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #aed9c3;
+    position: absolute;
+    margin-top: 0px;
+    transform-origin: top left;
+    animation: rotateRectangles 5s infinite linear;
+    justify-content: space-evenly;
+}
+
+.rect:nth-child(1) {
+    top: 500px;
+    left: 500px;
+}
+
+.rect:nth-child(2) {
+    top: 400px;
+    left: 180px;
+}
+
+.rect:nth-child(3) {
+    top: 300px;
+    left: 400px;
+}
+
+.rect:nth-child(4) {
+    top: 180px;
+    left: 200px;
+}
+
+@keyframes rotateRectangles {
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+        height: 10px;
+        width: 10px;
+    }
+
+    to {
+        transform: rotate(360deg);
+        opacity: 0.5;
+        height: 120px;
+        width: 120px;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 30px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+.form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    height: 580px;
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+}
+
+.tab1 {
+    margin-left: 100px;
+    width: 180px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5%;
+}
+
+.tab2 {
+    margin-left: 150px;
+    width: 180px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5%;
+}
+
+input {
+    margin-left: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 5%;
+}
+
+.submit-btn {
+    margin-left: 270px;
+    width: 200px;
+    background-color: #85b4e1;
+    color: white;
+}
+
+.tab1 a,
+.tab2 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.tab1:hover,
+.tab2:hover {
+    background-color: #7abae4;
+}
+
+.tab1 a:hover,
+.tab2 a:hover {
+    color: black;
+}
